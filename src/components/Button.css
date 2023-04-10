@@ -1,0 +1,12 @@
+.newButton{
+
+  color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+
+}
+
+.newButton:hover{
+  background-color: #EC5453;
+  cursor: pointer
+}
