@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/JustinMul.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/JustinMul.github.io/static/js/main.dcc7b8f0.js",
-    "static/js/787.3ba5e41c.chunk.js": "/JustinMul.github.io/static/js/787.3ba5e41c.chunk.js",
-    "static/media/logo.svg": "/JustinMul.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/JustinMul.github.io/index.html",
-    "main.073c9b0a.css.map": "/JustinMul.github.io/static/css/main.073c9b0a.css.map",
-    "main.dcc7b8f0.js.map": "/JustinMul.github.io/static/js/main.dcc7b8f0.js.map",
-    "787.3ba5e41c.chunk.js.map": "/JustinMul.github.io/static/js/787.3ba5e41c.chunk.js.map"
+    "main.css": "/justinmul.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/justinmul.github.io/static/js/main.8883692a.js",
+    "static/js/787.3ba5e41c.chunk.js": "/justinmul.github.io/static/js/787.3ba5e41c.chunk.js",
+    "static/media/logo.svg": "/justinmul.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/justinmul.github.io/index.html",
+    "main.073c9b0a.css.map": "/justinmul.github.io/static/css/main.073c9b0a.css.map",
+    "main.8883692a.js.map": "/justinmul.github.io/static/js/main.8883692a.js.map",
+    "787.3ba5e41c.chunk.js.map": "/justinmul.github.io/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.dcc7b8f0.js"
+    "static/js/main.8883692a.js"
   ]
 }
