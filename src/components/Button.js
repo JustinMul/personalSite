@@ -1,11 +1,11 @@
 import './Button.css';
 
-const Button = ({text})=>{
+const Button = ({text, onClick, className})=>{
   
   return(
-    <div className='newButton'>
+    <button className={className} onClick={onClick}>
       {text}
-    </div>
+    </button>
   )
 }
 

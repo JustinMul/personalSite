@@ -7,24 +7,17 @@ function App() {
   
   const [buttonStatus, setButtonStatus] = useState(0)
 
-  const handleClick=(e)=>{
-    console.log('this is clicked')
-  }
-
-
-
   return (
-    // note want to change the buttons to be red when showing what tab they're in
     
     <div className='main'>
 
       <header className="mainBox">
         <div>Justin Mulroney</div>
         <div className='buttonContainer'>
-          <Button text="Home" onClick={handleClick}></Button>
-          <Button text="About" onClick={handleClick}></Button>
-          <Button text='Contact' onClick={handleClick}></Button>
-          <Button text='Projects' onClick={handleClick}></Button>
+          <Button text="Home" onClick={()=>{setButtonStatus(0)}} className={buttonStatus===0? 'newButtonactive': "newButton" }></Button>
+          <Button text="About" onClick={()=>{setButtonStatus(1)}} className={buttonStatus===1? 'newButtonactive': "newButton" }></Button>
+          <Button text='Contact' onClick={()=>{setButtonStatus(2)}} className={buttonStatus===2? 'newButtonactive': "newButton" }></Button>
+          <Button text='Projects' onClick={()=>{setButtonStatus(3)}} className={buttonStatus===3? 'newButtonactive': "newButton" }></Button>
         </div>
       </header>
 
@@ -33,15 +26,16 @@ function App() {
       <div className='mainBody'>
 
         <div className="leftBody">
-          <p className='nameIntro'>
-            Hi, I'm Software Developer
-          </p>
+          <span className='nameIntro'>
+            Hi, I'm a
+          </span>
+          <span className='developer' > Software Developer</span>
           <p className='textBody'>
-          I'm a passionate software developer with a keen eye for detail and a love for clean, efficient code. I specialize in Web Development,
+           I have a keen eye for detail and a love for clean, efficient code. I specialize in Web Development,
            and have a proven track record of delivering high-quality solutions that meet my clients' needs. 
            When I'm not coding, you can find me playing board games or bouldering. Thanks for stopping by my site, and feel free to shoot me and email at Justinmulroney@gmail.com.
           </p>
-          <Button text="Hire Me"></Button>
+          <Button text="Hire Me" className='hireMe'></Button>
         </div>
 
         <div className='rightBody'>

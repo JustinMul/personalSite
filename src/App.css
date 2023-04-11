@@ -5,7 +5,6 @@ body {
 	float: none !important; 
   margin-left: auto;
   margin-right: auto;
-  
   background: linear-gradient(to bottom right, #337FFF , #DFABBD 65% );
 }
 
@@ -52,6 +51,12 @@ body {
 .nameIntro{
   font-size: 40px;
   color: white;
+}
+
+.developer{
+  font-size: 40px;
+  color: white;
+  color:#EC5453
 }
 
 .textBody{
