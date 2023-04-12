@@ -1,0 +1,21 @@
+.mainBody{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nameIntro{
+  font-size: 40px;
+  color: white;
+}
+
+.developer{
+  font-size: 40px;
+  color: white;
+  color:#EC5453
+}
+
+.textBody{
+  font-size: 20px;
+  color: white;
+}
