@@ -43,3 +43,13 @@ body {
   }
 }
 
+.footer{
+   position:absolute;
+   bottom:0;
+   height:60px;   /* Height of the footer */
+   
+}
+
+.footer:hover{
+  cursor: pointer
+}

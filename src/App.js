@@ -34,7 +34,7 @@ function App() {
       {buttonStatus===3 ? <Contact></Contact> :''}
       
 
-      <footer>
+      <footer className='footer' >
         <img src={Github} height={'50px'} width={'95px'} alt={'Github icon'} onClick={()=>window.open('https://github.com/JustinMul')}></img>
         <img src={Linkedin} height={'50px'} width={'50px'} alt={'Linkedin icon'} onClick={()=> window.open('https://www.linkedin.com/in/justinmulroney/')} ></img>
       </footer>
