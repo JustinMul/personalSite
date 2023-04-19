@@ -24,9 +24,9 @@ const AboutMe = () =>{
           ABOUT ME
         </span>
         <p className='textBody'>
-          I have a keen eye for detail and a love for clean, efficient code. I specialize in Web Development,
-          and have a proven track record of delivering high-quality solutions that meet my clients' needs. 
-          When I'm not coding, you can find me playing board games or bouldering. Thanks for stopping by my site, and feel free to shoot me and email at Justinmulroney@gmail.com.
+          Originally I started out in the finance sector, but I transitioned to software development in 2022.
+          I have a proven track record of delivering high-quality solutions that meet my clients' needs, which was showcased in my time at Ryna.
+          When I'm not coding, you can find me playing board games or bouldering. Feel free to click the button down below and learn all about my skills and experience!
         </p>
         <Button text="Download CV" className='hireMe' onClick={saveFile} ></Button>
       </div>

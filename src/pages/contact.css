@@ -1,33 +1,15 @@
-.mainProjectContainer{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
+.contactIcons{
+  max-width: 250px;
+  border-radius: 25px;
 }
 
-
-.box {
- color: white;
- display: flex;
- flex-direction: column;
- align-items: center;
- margin: 5px;
- margin-top: 20px;
- width: 300px;
- min-height:400px;
+.gradient-border:hover{
+  cursor: pointer;
 }
 
-.contentContainer{
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* 
 .gradient-border {
-  --borderWidth: 3px;
+  margin-top: 50px;
+  --borderWidth: 25px;
   background: none;
   position: relative;
   border-radius: var(--borderWidth);
@@ -57,5 +39,4 @@
 	100% {
 		background-position: 0% 50%;
 	}
-} */
-
+}
