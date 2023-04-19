@@ -24,3 +24,22 @@
 .leftBody{
   margin-top: 50px;
 }
+
+.timeMan{
+  width:40rem
+}
+@media only screen and (max-width: 600px) {
+  .aboutMainBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeMan{
+    width:20rem
+  }
+  .mobileContainer{
+    display: flex;
+    justify-content: center;
+  }
+}

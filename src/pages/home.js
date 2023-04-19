@@ -5,7 +5,7 @@ import './home.css'
 const Home = () =>{
   return(
     <div className='mainBody'>
-      <div >
+      <div>
         <span className='nameIntro'>
           Hi, I'm a
         </span>
@@ -17,13 +17,16 @@ const Home = () =>{
 
              
         </p>
-        <Button text="Email Me" className='hireMe' onClick={()=>window.open('mailto:justinmulroney@gmail.com')}></Button>
+        <div className="mobileContainer">
+          <Button text="Email Me" className='hireMe' onClick={()=>window.open('mailto:justinmulroney@gmail.com')}></Button> 
+        </div>
+        
       </div>
 
       <div >
-        <img src={cakeMan} style={{ width: 600}} alt='Cake!' ></img>
+        <img src={cakeMan} className="cakeman" alt='Cake!' ></img>
       </div>
-     </div>
+    </div>
   )
 }
 

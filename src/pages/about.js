@@ -16,7 +16,7 @@ const AboutMe = () =>{
     <div className='aboutMainBody'>
      
       <div className="leftBody">
-        <img src={aboutMe} style={{ width: 600}} alt='TimeMan'></img>
+        <img src={aboutMe} className="timeMan" alt='TimeMan'></img>
       </div>
 
       <div className='rightBody'>
@@ -28,7 +28,10 @@ const AboutMe = () =>{
           I have a proven track record of delivering high-quality solutions that meet my clients' needs, which was showcased in my time at Ryna.
           When I'm not coding, you can find me playing board games or bouldering. Feel free to click the button down below and learn all about my skills and experience!
         </p>
-        <Button text="Download CV" className='hireMe' onClick={saveFile} ></Button>
+        <div className="mobileContainer">
+          <Button text="Download CV" className='hireMe' onClick={saveFile} ></Button>
+        </div>
+        
       </div>
      </div>
      
