@@ -17,7 +17,7 @@ const Home = () =>{
 
              
         </p>
-        <Button text="Email Me" className='hireMe'></Button>
+        <Button text="Email Me" className='hireMe' onClick={()=>window.open('mailto:justinmulroney@gmail.com')}></Button>
       </div>
 
       <div >

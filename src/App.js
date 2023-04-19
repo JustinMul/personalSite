@@ -27,12 +27,12 @@ function App() {
         </div>
       </header>
 
-  
-      {buttonStatus===0 ? <Home></Home> :''}
-      {buttonStatus===1 ? <AboutMe></AboutMe> :''}
-      {buttonStatus===2 ? <Projects></Projects> :''}
-      {buttonStatus===3 ? <Contact></Contact> :''}
-      
+    
+        {buttonStatus===0 ? <Home></Home> :''}
+        {buttonStatus===1 ? <AboutMe></AboutMe> :''}
+        {buttonStatus===2 ? <Projects></Projects> :''}
+        {buttonStatus===3 ? <Contact></Contact> :''}
+
 
       <footer className='footer' >
         <img src={Github} height={'50px'} width={'95px'} alt={'Github icon'} onClick={()=>window.open('https://github.com/JustinMul')}></img>
