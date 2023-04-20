@@ -9,29 +9,41 @@ import Contact from './pages/contact';
 import Github from './imgs/github.png'
 import Linkedin from './imgs/linkedin.png'
 
+
+
 function App() {
   
   const [buttonStatus, setButtonStatus] = useState(0)
+  const [menuState, setMenuState] = useState({button:'Home', open:true})
+
+ 
 
   return (
     
     <div className='main'>
 
       <header className="mainBox">
-        <span>Justin Mulroney</span>       
+        <span>JM</span>       
         <div className='buttonContainer'>
-          <Button text="Home" onClick={()=>{setButtonStatus(0)}} className={buttonStatus===0? 'newButtonactive': "newButton" }></Button>
-          <Button text="About" onClick={()=>{setButtonStatus(1)}} className={buttonStatus===1? 'newButtonactive': "newButton" }></Button>
-          <Button text='Projects' onClick={()=>{setButtonStatus(2)}} className={buttonStatus===2? 'newButtonactive': "newButton" }></Button>
-          <Button text='Contact' onClick={()=>{setButtonStatus(3)}} className={buttonStatus===3? 'newButtonactive': "newButton" }></Button>
+
+      {menuState.open === true ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  <>
+         
+          <Button text="Home" onClick={()=>{setMenuState({button:'Home',open:(!menuState.open)})}} className={menuState.button==='Home'? 'newButtonactive': "newButton" }></Button>
+          <Button text="About" onClick={()=>{setMenuState({button:'About',open:(!menuState.open)})}} className={menuState.button==='About'? 'newButtonactive': "newButton" }></Button>
+          <Button text='Projects' onClick={()=>{setMenuState({button:'Projects',open:(!menuState.open)})}} className={menuState.button==='Projects'? 'newButtonactive': "newButton" }></Button>
+          <Button text='Contact' onClick={()=>{setMenuState({button:'Contact',open:(!menuState.open)})}} className={menuState.button==='Contact'? 'newButtonactive': "newButton" }></Button>
+          <Button text="✕" onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton" }></Button>
+        </> }
+         
+          
         </div>
       </header>
 
     
-        {buttonStatus===0 ? <Home></Home> :''}
-        {buttonStatus===1 ? <AboutMe></AboutMe> :''}
-        {buttonStatus===2 ? <Projects></Projects> :''}
-        {buttonStatus===3 ? <Contact></Contact> :''}
+        {menuState.button==='Home' ? <Home></Home> :''}
+        {menuState.button==='About' ? <AboutMe></AboutMe> :''}
+        {menuState.button==='Projects' ? <Projects></Projects> :''}
+        {menuState.button==='Contact' ? <Contact></Contact> :''}
 
 
       <footer className='footer' >

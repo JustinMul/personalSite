@@ -15,7 +15,8 @@ const Projects =()=>{
         <div className="box" >
           <h1 className='developer'>Ryna</h1>
           <img src={Ryna} height={'200px'} maxwidthwidth={'300px'} alt={'ryna Logo'}></img>
-          <p>Ryna is the next generation rental platform designed to make the rental experience easy and safe for inclusive-minded allies. They also secured a deal on dragons den for 1 million dollars.</p>
+          <p>Ryna is the next generation rental platform designed to make the rental experience easy and safe for inclusive-minded allies. 
+            They also secured a deal on dragons den for 1 million dollars.</p>
           {/* <p>Tech Stack: Javascript, GoLang, NextJs, Axios, Datadog, Digital Ocean</p> */}
         </div>
        

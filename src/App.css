@@ -20,6 +20,7 @@ body {
   padding-top: 75px;
   font-size: 30px;
   color: white;
+ 
 }
 
 
@@ -48,8 +49,9 @@ body {
   }
   .mainBox{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    margin-bottom: 2.5rem;
   }
   .buttonContainer{
     display: flex;

@@ -6,8 +6,15 @@
 }
 
 .newButton:hover{
-  background-color: #EC5453;
+  /* background-color: #EC5453; */
   cursor: pointer
+}
+
+@media only screen and (max-width: 600px) {
+  .newButton:hover{
+    background-color: none;
+    cursor: pointer
+  }
 }
 
 .newButtonactive{

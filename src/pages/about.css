@@ -33,11 +33,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
   }
 
-  .timeMan{
-    width:20rem
-  }
   .mobileContainer{
     display: flex;
     justify-content: center;
