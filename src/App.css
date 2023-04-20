@@ -14,13 +14,16 @@ body {
 }
 
 .mainBox{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 75px;
-  font-size: 30px;
-  color: white;
- 
+  display: none;
+}
+
+.mainBoxDesktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 75px;
+    font-size: 30px;
+    color: white;
 }
 
 
@@ -41,6 +44,17 @@ body {
   cursor: pointer
 }
 
+.openIt{
+  animation: fade-in 500ms forwards;
+}
+
+.closeIt{
+  animation: fade-out 500ms forwards;
+}
+
+.jmLogo{
+  width: 3rem;
+}
 
 @media only screen and (max-width: 600px) {
   .main{
@@ -49,10 +63,20 @@ body {
   }
   .mainBox{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 75px;
+    font-size: 30px;
+    color: white;
+    
     align-items: center;
     margin-bottom: 2.5rem;
   }
+
+  .mainBoxDesktop{
+    display: none;
+}
+
   .buttonContainer{
     display: flex;
     flex-direction: column;

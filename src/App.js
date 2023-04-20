@@ -8,37 +8,48 @@ import Projects from './pages/projects';
 import Contact from './pages/contact';
 import Github from './imgs/github.png'
 import Linkedin from './imgs/linkedin.png'
+import jmLogo from './imgs/jmLogoInvert.png'
 
 
 
 function App() {
   
-  const [buttonStatus, setButtonStatus] = useState(0)
-  const [menuState, setMenuState] = useState({button:'Home', open:true})
-
- 
+  const [menuState, setMenuState] = useState({button:'Home', open:false})
 
   return (
     
     <div className='main'>
 
+      {/* for desktop header */}
+      <header className="mainBoxDesktop">
+     
+        <img src={jmLogo}  className='jmLogo' alt='JM logo'></img> 
+        <div className='buttonContainer'>
+          <Button text="Home" onClick={()=>{setMenuState({button:'Home',open:(!menuState.open)})}} className={menuState.button==='Home'? 'newButtonactive': "newButton" }></Button>
+          <Button text="About" onClick={()=>{setMenuState({button:'About',open:(!menuState.open)})}} className={menuState.button==='About'? 'newButtonactive': "newButton" }></Button>
+          <Button text='Projects' onClick={()=>{setMenuState({button:'Projects',open:(!menuState.open)})}} className={menuState.button==='Projects'? 'newButtonactive': "newButton" }></Button>
+          <Button text='Contact' onClick={()=>{setMenuState({button:'Contact',open:(!menuState.open)})}} className={menuState.button==='Contact'? 'newButtonactive': "newButton" }></Button>
+        </div>
+      </header>
+
+      {/* for mobile header */}
       <header className="mainBox">
-        <span>JM</span>       
+      <img src={jmLogo}  className='jmLogo' alt='JM logo'></img>      
         <div className='buttonContainer'>
 
-      {menuState.open === true ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  <>
+      {menuState.open === false  ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  <>
          
           <Button text="Home" onClick={()=>{setMenuState({button:'Home',open:(!menuState.open)})}} className={menuState.button==='Home'? 'newButtonactive': "newButton" }></Button>
           <Button text="About" onClick={()=>{setMenuState({button:'About',open:(!menuState.open)})}} className={menuState.button==='About'? 'newButtonactive': "newButton" }></Button>
           <Button text='Projects' onClick={()=>{setMenuState({button:'Projects',open:(!menuState.open)})}} className={menuState.button==='Projects'? 'newButtonactive': "newButton" }></Button>
           <Button text='Contact' onClick={()=>{setMenuState({button:'Contact',open:(!menuState.open)})}} className={menuState.button==='Contact'? 'newButtonactive': "newButton" }></Button>
           <Button text="✕" onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton" }></Button>
+
         </> }
          
           
         </div>
       </header>
-
     
         {menuState.button==='Home' ? <Home></Home> :''}
         {menuState.button==='About' ? <AboutMe></AboutMe> :''}
