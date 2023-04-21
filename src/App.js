@@ -37,7 +37,8 @@ function App() {
       <img src={jmLogo}  className='jmLogo' alt='JM logo'></img>      
         <div className='buttonContainer'>
 
-      {menuState.open === false  ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  <>
+           {menuState.open === false  ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  
+          <div className='popUpMenu'>
          
           <Button text="Home" onClick={()=>{setMenuState({button:'Home',open:(!menuState.open)})}} className={menuState.button==='Home'? 'newButtonactive': "newButton" }></Button>
           <Button text="About" onClick={()=>{setMenuState({button:'About',open:(!menuState.open)})}} className={menuState.button==='About'? 'newButtonactive': "newButton" }></Button>
@@ -45,7 +46,7 @@ function App() {
           <Button text='Contact' onClick={()=>{setMenuState({button:'Contact',open:(!menuState.open)})}} className={menuState.button==='Contact'? 'newButtonactive': "newButton" }></Button>
           <Button text="✕" onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton" }></Button>
 
-        </> }
+        </div> }
          
           
         </div>

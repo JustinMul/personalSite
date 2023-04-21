@@ -11,6 +11,7 @@ const Projects =()=>{
 
   return(
     <section className="mainProjectContainer">
+    
       <div className='contentContainer'>
         <div className="box" >
           <h1 className='developer'>Ryna</h1>
