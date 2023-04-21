@@ -7,9 +7,9 @@ const Home = () =>{
     <div className='mainBody'>
       <div>
         <span className='nameIntro'>
-          Hi, I'm a
+          Hi, I'm
         </span>
-        <span className='developer' > Software Developer</span>
+        <span className='developer' > Justin Mulroney</span>
         <p className='textBody'>
           I've developed, and maintained software applications in both Javascript and Python. 
           I specilize in web-development and have built sites for Dragons Den winning companies (see projects). 
