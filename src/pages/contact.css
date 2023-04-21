@@ -1,9 +1,4 @@
-.mainProjectContainer{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 
-}
 .contactIcons{
   max-width: 250px;
   border-radius: 25px;
