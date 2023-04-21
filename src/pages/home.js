@@ -12,7 +12,7 @@ const Home = () =>{
         <span className='developer' > Justin Mulroney</span>
         <p className='textBody'>
           I've developed, and maintained software applications in both Javascript and Python. 
-          I specilize in web-development and have built sites for Dragons Den winning companies (see projects). 
+          I specialize in web-development and have built sites for Dragons Den winning companies (see projects). 
           Thanks for stopping by my site, and feel free to shoot me and email at Justinmulroney@gmail.com.
 
              
