@@ -23,7 +23,7 @@ function App() {
       {/* for desktop header */}
       <header className="mainBoxDesktop">
      
-        <img src={jmLogo}  className='jmLogo' alt='JM logo'></img> 
+        <img src={jmLogo}  className='jmLogo' alt='JM logo' onClick={()=>{setMenuState({button:'Home'})}}></img> 
         <div className='buttonContainer'>
           <Button text="Home" onClick={()=>{setMenuState({button:'Home',open:(!menuState.open)})}} className={menuState.button==='Home'? 'newButtonactive': "newButton" }></Button>
           <Button text="About" onClick={()=>{setMenuState({button:'About',open:(!menuState.open)})}} className={menuState.button==='About'? 'newButtonactive': "newButton" }></Button>
@@ -34,7 +34,7 @@ function App() {
 
       {/* for mobile header */}
       <header className="mainBox">
-      <img src={jmLogo}  className='jmLogo' alt='JM logo'></img>      
+      <img src={jmLogo}  className='jmLogo' alt='JM logo' onClick={()=>{setMenuState({button:'Home', open:false})}}></img>      
         <div className='buttonContainer'>
 
            {menuState.open === false  ? <Button text={`☰`} onClick={()=>{setMenuState({button:menuState.button,open:!menuState.open})}} className={"newButton"}></Button>:  
