@@ -13,7 +13,7 @@ const Home = () =>{
         <p className='textBody'>
           I've developed, and maintained software applications in both Javascript and Python. 
           I specialize in web-development and have built sites for Dragons Den winning companies (see projects). 
-          Thanks for stopping by my site, and feel free to shoot me and email at Justinmulroney@gmail.com.
+          Thanks for stopping by my site, and feel free to shoot me an email at Justinmulroney@gmail.com.
 
              
         </p>
