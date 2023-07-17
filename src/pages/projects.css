@@ -41,8 +41,9 @@
   }
 
   .contentContainer {
-    border-style: solid;
-    border-color: grey;  
+    background-color: rgba(142, 142, 142, 0.029);
+    /* border-style: solid; */
+    /* border-color: grey;   */
     margin-bottom: 1rem;
    }
 }
