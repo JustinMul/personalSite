@@ -256,7 +256,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="hero-scroll">
+          <div className={`hero-scroll ${navScrolled ? 'hidden' : ''}`}>
             <div className="hero-scroll-icon"></div>
             <span>Scroll</span>
           </div>
@@ -338,7 +338,7 @@ function App() {
             <p className="section-label">Career Journey</p>
             <h2 className="section-title">Professional Experience</h2>
             <p className="section-description">
-              From Fortune 500 banks to high-growth startups, I've helped build products that scale.
+              From Fortune 500 bank to high-growth startups, I've helped build products that scale.
             </p>
           </div>
           <div className="experience-timeline">
