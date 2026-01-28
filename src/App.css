@@ -1035,23 +1035,35 @@
 }
 
 @media (max-width: 768px) {
+  .nav-content {
+    position: static;
+  }
+  
   .nav-links {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 10, 15, 0.98);
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-primary);
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    z-index: 99;
+    gap: 16px;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
   }
   
   .nav-links.open {
     display: flex;
+  }
+  
+  .nav-links .nav-link {
+    font-size: 1.8rem;
+    padding: 20px 40px;
+    width: auto;
   }
   
   .nav-link {
@@ -1061,7 +1073,7 @@
   
   .nav-mobile-toggle {
     display: flex;
-    z-index: 100;
+    z-index: 1000;
   }
   
   .nav-mobile-toggle.open span:nth-child(1) {

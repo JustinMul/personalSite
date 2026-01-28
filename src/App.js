@@ -230,8 +230,8 @@ function App() {
                 <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
                   Get In Touch
                 </button>
-                <button className="btn btn-secondary" onClick={() => scrollToSection('projects')}>
-                  View Projects
+                <button className="btn btn-secondary" onClick={() => scrollToSection('experience')}>
+                  View Experience
                 </button>
                 <a href={resumeData.basics.github} target="_blank" rel="noopener noreferrer" className="btn btn-icon">
                   <Icons.GitHub />
